@@ -17,6 +17,11 @@ where : used to filter columns based on ceratin conditions
       between	between a certain range	
       like	search for a pattern	
       in	specify multiple possible values for a column
+      and used to combine two conditions
+      or used when only condition needs to be met
+      not used to query results the arent in the conditions
+          *sometimes it's next to where and in some cases its after
+           it's after the column name(like,between,in)
 
   -text must must surrounded by double quotes
 
