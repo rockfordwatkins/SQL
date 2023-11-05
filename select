@@ -3,14 +3,18 @@ COMMANDS
 select : used to call columns that are to be used in the query
   -the syntax for the select command is
   
-      select column1, column2, ...
+      select column1, column2
       from table;
       
-      SELECT *, ...
-      FROM table;
+      select *
+      from table;
+
+    select distinct column1, column2, ...
+    from table_name;
   
   -the asterik will select all the columns list in the table
   -the columns in the select commands can be from diffrent tables in the database
+  -select distinct will query only the unique record in each table given the columns requsted
 
 alias : used to give a column or table a temporary name and can be used throughout the statement
   -the syntax for aliases is
