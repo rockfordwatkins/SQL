@@ -1,0 +1,50 @@
+COMMAND
+
+where : used to filter columns based on ceratin conditions
+  -the syntax for the where command is
+
+    select column1, column2
+    from table
+    where condition;
+
+  -where operators 
+      =	equal	
+      >	greater than	
+      <	less than	
+      >=	greater than or equal	to
+      <=	less than or equal to
+      <>	or != not equal. 
+      between	between a certain range	
+      like	search for a pattern	
+      in	specify multiple possible values for a column
+
+  -text must must surrounded by double quotes
+
+      select column1 
+      from table
+      where column1 = "Text";
+
+      select column1 
+      from table
+      where column1 = 100;
+
+      select column1 
+      from table
+      where column1 between 1 and 100;
+
+      select column1 
+      from table
+      where column1 like 't%';
+
+  -when using like the "%" is used to find results with multiple characters missing
+
+      select column1 
+      from table
+      where column1 like 't_x_';
+
+  -when using like the "_" is used to find results with a single character missing
+  -_	Represents a single character	h_t finds hot, hat, and hit
+  -[]	Represents any single character within the brackets	h[oa]t finds hot and hat, but not hit
+  -!	Represents any character not in the brackets	h[!oa]t finds hit, but not hot and hat
+  -  -	Represents any single character within the specified range	c[a-b]t finds cat and cbt
+
