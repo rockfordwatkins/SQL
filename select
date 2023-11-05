@@ -1,0 +1,58 @@
+COMMANDS
+
+select : used to call columns that are to be used in the query
+  -the syntax for the select command is
+  
+      select column1, column2, ...
+      from table;
+      
+      SELECT *, ...
+      FROM table;
+  
+  -the asterik will select all the columns list in the table
+  -the columns in the select commands can be from diffrent tables in the database
+
+alias : used to give a column or table a temporary name and can be used throughout the statement
+  -the syntax for aliases is
+
+    select columnName as column1
+    from table;
+
+    select columnName as Column1
+    from table as table1;
+
+    select columnName column1
+    from table;
+
+    select columnName Column1
+    from table as table1;
+
+    select columnName [column 1]
+    from table;
+
+    select columnName [column 1]
+    from table as [table 1];
+    
+    select columnName "column 1"
+    from table;
+
+    select columnName "column 1"
+    from table as "table 1";
+
+  -for aliases the "as" is optional
+  -to create an alias with a space in between the text you must surround the alias name in brackets or double quotes
+  -to query columns from different tables use the following syntax
+
+     SELECT table1.column1, table1.column2, table2.column1
+    from table1, table2 
+
+    SELECT a.column1, a.column2, b.column1
+    from table1 a, table2 b
+    
+
+concatonation : used to combine different columns into a single column 
+  -the syntax for the concatonation is
+
+    SELECT column1,column2 + ', ' + column3 + ' ' + column4 + ', ' + column5 AS columns
+    FROM table;
+
